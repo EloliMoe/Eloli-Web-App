@@ -11,7 +11,7 @@
                         {!! csrf_field() !!}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label class="col-md-4 control-label">主人，怎么称呼您。</label>
+                            <label class="col-md-4 control-label">主人，怎么称呼您</label>
 
                             <div class="col-md-6">
                                 <input type="text" class="form-control" name="name" value="{{ old('name') }}">
@@ -67,6 +67,7 @@
                         </div>
 
                         <div class="form-group">
+                            {!! Geetest::render('popup') !!}
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
                                     <i class="fa fa-btn fa-user"></i>按下这个按钮，你就是我们的人了
