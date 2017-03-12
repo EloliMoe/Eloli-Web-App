@@ -10,7 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+Route::get('auth/geetest','AuthAuthController@getGeetest');
 Route::get('/', function () {
     return view('welcome');
 });
@@ -32,6 +32,6 @@ Route::group(['middleware' => ['web']], function () {
 
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
-
     Route::get('/home', 'HomeController@index');
 });
+
