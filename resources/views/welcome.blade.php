@@ -8,7 +8,7 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-                    Welcome to Eloli Video
+                    Welcome to Eloli Video，欢迎来到Eloli 视频
                 </div>
             </div>
         </div>
