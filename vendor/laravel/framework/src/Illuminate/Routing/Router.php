@@ -19,7 +19,6 @@ use Illuminate\Contracts\Routing\Registrar as RegistrarContract;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use geetest\Facades\geetest;
-Route::get('auth/geetest','AuthAuthController@getGeetest');
 class Router implements RegistrarContract
 {
     use Macroable;
