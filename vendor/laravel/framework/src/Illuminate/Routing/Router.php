@@ -3,6 +3,7 @@
 namespace Illuminate\Routing;
 
 use Closure;
+
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
@@ -17,7 +18,8 @@ use Symfony\Bridge\PsrHttpMessage\Factory\HttpFoundationFactory;
 use Illuminate\Contracts\Routing\Registrar as RegistrarContract;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-
+use geetest\Facades\geetest;
+Route::get('auth/geetest','AuthAuthController@getGeetest');
 class Router implements RegistrarContract
 {
     use Macroable;
@@ -1281,4 +1283,5 @@ class Router implements RegistrarContract
     {
         return $this->patterns;
     }
+
 }
