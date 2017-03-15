@@ -67,7 +67,6 @@
                         </div>
 
                         <div class="form-group">
-                            {!! Geetest::render('popup') !!}
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
                                     <i class="fa fa-btn fa-user"></i>按下这个按钮，你就是我们的人了
